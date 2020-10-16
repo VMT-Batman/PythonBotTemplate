@@ -18,7 +18,7 @@ class MyClient(discord.Client):
         # Logs received messages from any server the bot is in
         print('Message from {0.author}: {0.content}'.format(message))
         if message.content.startswith(prefix + 'Desired Argument'):
-            await message.channel.send('How you want the bot to respong to this argument')
+            await message.channel.send('How you want the bot to respond to this argument')
 
 
 client = MyClient()
